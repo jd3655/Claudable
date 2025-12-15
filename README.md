@@ -195,6 +195,10 @@ npm run db:reset    # Reset database to initial state
                     # Use when: Need fresh start or corrupted data
                     # Warning: This will delete all your data!
 
+npm run security:audit # Scan dependencies with npm audit and summarize results
+                       # Use when: Validating the codebase for known vulnerabilities
+                       # Exits with non-zero status if any vulnerability is reported
+
 npm run clean       # Remove all dependencies
                     # Use when: Dependencies conflict or need fresh install
                     # Removes: node_modules/, package-lock.json
