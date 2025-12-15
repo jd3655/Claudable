@@ -25,6 +25,7 @@
     "prisma:reset": "prisma migrate reset",
     "setup": "npm install && prisma generate && prisma db push",
     "check-cli": "node scripts/check-claude-cli.js",
+    "security:audit": "node scripts/vulnerability-scan.js",
     "postinstall": "npm run ensure:env"
   },
   "dependencies": {
